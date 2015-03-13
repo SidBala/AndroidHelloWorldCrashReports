@@ -1,8 +1,4 @@
-iOS/HelloWorld/HelloWorld.xcodeproj/xcuserdata
-iOS/HelloWorld/HelloWorld.xcodeproj/project.xcworkspace/xcuserdata/
-
-iOS/HelloWorldCocoapods/HelloWorldCocoapods.xcodeproj/xcuserdata
-iOS/HelloWorldCocoapods/HelloWorldCocoapods.xcodeproj/project.xcworkspace/xcuserdata/
+xcuserdata
 
 iOS/HelloWorldCocoapods/Pods/
 iOS/HelloWorldCocoapods/Podfile.lock
