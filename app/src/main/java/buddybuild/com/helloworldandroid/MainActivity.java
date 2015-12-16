@@ -1,9 +1,12 @@
 package buddybuild.com.helloworldandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -15,6 +18,15 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         TextView textView = (TextView) this.findViewById(R.id.myTextBox);
         textView.setText(BuildConfig.VERSION_CODE + " - " + BuildConfig.VERSION_NAME);
+
+
+        Button crashme = (Button) findViewById(R.id.button);
+        crashme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                throw new RuntimeException();
+            }
+        });
     }
 
 
